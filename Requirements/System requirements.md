@@ -105,7 +105,7 @@ Priority will be measured in 0-4 scale, where:
 ## S6. Verification & Acceptance Criteria
 All P0 and P1 tasks from the previous section should be completed, tested and reviewed by stakeholders.
 
-The UI should be intuitive, responsive and working on most modern browsers and display sizes available on the market.
+The UI should work on most modern browsers and display sizes available on the market.
 
 The system should follow non-functional requirements stated in S2.
 The system should be accessible globally.
