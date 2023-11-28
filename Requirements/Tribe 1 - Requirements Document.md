@@ -121,31 +121,243 @@ The following stakeholders and requirement sources are identified for the system
 
 The Environment book describes the application domain and external context, physical or virtual (or a mix), in which the system will operate.
 
+### Environment User Stories
+
+1. **For Service Providers and Users (E2: Components)**
+   - As a service provider, I want to efficiently list and manage my services on the platform, and as a user, I want to easily find, book, and pay for these services, so that both parties can benefit from a streamlined and secure transaction process.
+
+
+2. **For Platform Functionality and User Experience (E3: Constraints, E4: Assumptions)**
+   - As a platform designer, I want to create a system that is technologically compatible, easy to navigate, and performs well under varying internet connectivity conditions, assuming users have basic technological proficiency and device accessibility, so that we can provide a seamless and inclusive experience for all users.
+
+
+3. **For Regulatory Compliance and Payment Processing (E3: Constraints, E6: Invariants)**
+   - As a platform administrator, I want to ensure that the platform adheres to all relevant laws and regulations, including data privacy, and offers a stable and reliable payment gateway, so that we can maintain legal compliance and user trust while ensuring smooth financial transactions.
+
+
+4. **For Scalability and Market Demand (E3: Constraints, E4: Assumptions)**
+   - As a business strategist, I want the platform to be scalable and flexible to accommodate a growing number of users and transactions, while assuming there is sustained market demand for our services, so that we can expand our reach and adapt to changing market conditions.
+
+
+5. **For User Interface and Accessibility (E3: Constraints, E5: Effects)**
+   - As a UX/UI designer, I want to develop a user-friendly interface that adapts to different devices and screen sizes, considering users' varied technological capabilities and preferences, so that we can ensure accessibility and a positive experience for every user.
+
+
+6. **For Service Reliability and Data Accuracy (E3: Constraints, E4: Assumptions, E6: Invariants)**
+   - As a service provider, I want to rely on the platform's stability, including its integrations with payment gateways and external APIs, and assume that the data provided by users is accurate, so that I can offer consistent and reliable services to my clients.
+
+
+7. **For User Engagement and Feedback (E4: Assumptions, E5: Effects)**
+   - As a community manager, I assume users will engage positively and responsibly, providing fair ratings and constructive feedback, while adapting to the effects of regulatory changes and internet connectivity fluctuations, so that we can maintain a vibrant and responsive service community.
+
+
 ### E.1 Glossary
 
-Clear and precise definitions of all the vocabulary specific to the application domain, including technical terms, words from ordinary language used in a special meaning, and acronyms.
+#### Facility Services
 
+---
+**Facility Services** encompass a wide range of activities essential for the maintenance, care, and management of commercial and residential buildings. This includes services like cleaning, security, HVAC (heating, ventilation, and air conditioning) maintenance, and other tasks that ensure the functionality, safety, and efficiency of a facility.
+
+#### HVAC Services
+
+---
+**HVAC Services** refer to the installation, maintenance, and repair of heating, ventilation, and air conditioning systems. This is crucial for maintaining a comfortable and safe indoor environment.
+
+#### Plumbing Services
+
+---
+**Plumbing Services** involve the installation, repair, and maintenance of pipes, fixtures, and other apparatuses for the distribution and use of water in a building. It also includes addressing issues like leaks, blockages, and water pressure problems.
+
+#### Electrical Services
+
+---
+**Electrical Services** cover the installation, repair, and maintenance of electrical systems, including wiring, outlets, lighting, and power systems in buildings. This also encompasses ensuring safety standards are met to prevent hazards.
+
+#### Landscaping Services
+
+---
+**Landscaping Services** include garden design, lawn care, tree planting and maintenance, and the construction of outdoor features like paths and retaining walls. It enhances the aesthetic appeal and functionality of outdoor spaces.
+
+#### Cleaning Services
+
+---
+**Cleaning Services** involve the thorough cleaning, sanitizing, and upkeep of different areas within a building, including floors, windows, restrooms, and common areas.
+
+#### Pest Control Services
+
+---
+**Pest Control Services** manage and eliminate unwanted pests like insects, rodents, and other animals that can cause damage or health risks in a building.
+
+#### Handyman Services
+
+---
+**Handyman Services** encompass a broad range of home repair and maintenance tasks, from fixing leaky faucets to painting walls and assembling furniture.
+
+#### Home Security Services
+
+---
+**Home Security Services** include the installation and monitoring of security systems like alarms, cameras, and motion sensors to protect a property from intrusion or damage.
+
+#### Job/Work Order
+
+---
+A **Job/Work Order** is a formal request, usually in a documented form, used to authorize and specify the details of maintenance, repair, or other work to be completed. It typically includes information such as the type of job, location, description of tasks, and resources required.
+
+#### Worksheet
+
+---
+A **Worksheet** is a document or form used for recording information, planning, and organizing tasks related to a specific job or project. In the context of home services, it often includes details such as client information, service descriptions, time logs, materials used, and any notes relevant to the task at hand. Worksheets are essential for tracking progress, ensuring accountability, and facilitating communication among team members and with clients.
+
+#### Field Services
+
+---
+**Field Services** refer to any service performed out in the field, as opposed to at a company property. This encompasses services like repair, maintenance, and installation work typically done at customer homes, business sites, or other external locations.
+
+#### Facility Management
+
+---
+**Facility Management** is the practice of coordinating the physical workplace with the people and work of an organization. It integrates principles of business administration, architecture, and the behavioral and engineering sciences to ensure functionality, comfort, safety, and efficiency of the built environment.
+
+#### Site Visit
+
+---
+A **Site Visit** involves a professional visiting a location to assess, review, or perform work required. This can be for preliminary assessment, ongoing project management, final inspection, or to provide specific services like repair or maintenance at the site.
+
+#### Task
+
+---
+A **Task** is an individual unit of work or activity that is a component of a larger project. Tasks are specific, measurable actions with a defined scope and duration. They are the building blocks that, when completed, contribute to the accomplishment of a project's objectives.
+
+#### Project
+
+---
+A **Project** is a larger, overarching endeavor that consists of multiple tasks and activities. It is defined by a set of objectives, a start and end date, and often involves various resources, planning, and coordination. A project is completed when its goals and objectives are achieved, which typically involves the completion of numerous interrelated tasks.
+
+#### Quotation
+
+---
+A **Quotation** is a formal statement or document that outlines the estimated cost for products or services. In the context of home services, it usually includes a detailed breakdown of the work to be done, the materials required, labor costs, and any other expenses. Quotations are provided to potential customers before any work begins, allowing them to understand and agree to the pricing and scope of the job.
+
+---
 ### E.2 Components
 
-List of elements of the environment that may affect or be affected by the system and project. Includes other systems to which the system must be interfaced.
+1. **Service Providers**
+   - **Description:** Businesses or individual professionals who offer home services like plumbing, electrical work, cleaning, etc. They are the primary customers of the platform, using it to list their services, receive job orders, and interact with users.
+
+2. **Users**
+   - **Description:** Individuals or organizations that use the platform to find and book home services. They interact with the system to schedule, pay for services, and provide feedback.
+
+3. **Booking System**
+   - **Description:** An interface for users to schedule services. Includes functionality for selecting service types, choosing providers, setting dates and times, and specifying job details.
+
+4. **Payment Gateway**
+   - **Description:** A secure system for processing payments, handling transactions between users and service providers, including invoicing, payment collection, and financial record-keeping.
+
+5. **User Profiles**
+   - **Description:** Accounts for users and service providers, storing information such as personal details, service history, preferences, and ratings.
+
+6. **Rating and Review System**
+   - **Description:** Allows users to rate and review the services they receive, which helps maintain quality and trust on the platform.
+
+7. **Notification System**
+   - **Description:** Sends alerts and updates to users and service providers, including appointment reminders, service status updates, and other important notifications.
+
+8. **Administrative Dashboard**
+   - **Description:** A backend interface for platform administrators to manage users, oversee transactions, and analyze platform performance.
+
+9. **Support System**
+   - **Description:** Handles inquiries, complaints, and assistance requests from users and service providers, through channels like chat, email, and phone.
+
+10. **Content Management System (CMS)**
+    - **Description:** Manages content on the platform, such as service descriptions & posts, blog posts, FAQs, and other resources.
+
+11. **Analytics and Reporting Tools**
+    - **Description:** Tools for analyzing user behavior, service performance, financial transactions, and other key metrics.
+
+12. **Security Features**
+    - **Description:** Ensures security and privacy of data, transactions, and interactions on the platform, including encryption, authentication, and data protection.
 
 ### E.3 Constraints
 
-Obligations and limits imposed on the project and system by the environment.
+1. **Regulatory Compliance**
+   - **Description:** The system must adhere to all relevant laws and regulations, including data privacy laws (like GDPR), labor laws, and industry-specific regulations. This can limit how data is collected, stored, and processed.
 
-⚠️ This section should not be empty!
+2. **Technological Compatibility**
+   - **Description:** The system should be compatible with various desktop devices and browsers.
+
+3. **Network Connectivity**
+   - **Description:** The system's performance is contingent on internet connectivity. In areas with limited or unreliable internet access, functionality might be constrained.
+
+4. **Payment Processing Restrictions**
+   - **Description:** Payment gateways may have restrictions on certain types of transactions, currencies, or geographical locations, impacting the ability to process payments globally.
+
+5. **User Interface Limitations**
+   - **Description:** The need for a user-friendly interface may limit the complexity of features that can be implemented, balancing advanced functionality with ease of use.
+
+6. **Resource Constraints**
+   - **Description:** Budgetary, staffing, and time constraints can affect the scope of features and services that can be developed and maintained. Example: Customer Service Call Centre limitations.
+
+7. **Scalability Limits**
+   - **Description:** The system’s ability to scale up to accommodate an increasing number of users and transactions can be limited by current infrastructure and technology.
+
+8. **Language and Localization**
+   - **Description:** The system might be limited in offering multilingual support or localizing content for different regions, affecting its usability in diverse markets.
+
+9. **Third-Party Dependencies**
+    - **Description:** Reliance on third-party services (like cloud hosting, APIs, etc.) can impose constraints based on their availability, performance, and feature set.
+    - This will need to be elaborated on based on P.5 - Required Technology Elements.
 
 ### E.4 Assumptions
 
-Properties of the environment that may be assumed with the goal of facilitating the project and simplifying the system.
+1. **Stable Internet Access**
+   - **Assumption:** Users and service providers have consistent and reliable access to the internet to use the platform effectively.
+
+2. **Technological Proficiency**
+   - **Assumption:** Both users and service providers possess a basic level of technological proficiency, enabling them to navigate and utilize the app's features without extensive training.
+
+3. **Device Accessibility**
+   - **Assumption:** A significant portion of the user base owns or has access to devices capable of running the web app.
+
+4. **Payment Gateway Reliability**
+   - **Assumption:** The integrated payment gateways are reliable and can handle the transaction volume without significant downtime or errors.
+
+5. **Market Demand**
+   - **Assumption:** There is a sustained demand for home services offered through online platforms in the target market.
+
+6. **Data Accuracy**
+   - **Assumption:** Information provided by users and service providers, such as contact details, service requirements, and availability, is accurate and up-to-date.
+
+7. **Compliance Willingness**
+   - **Assumption:** Service providers using the platform will comply with all relevant laws, regulations, and quality standards.
+
+8. **Positive User Behavior**
+   - **Assumption:** Users will engage positively and responsibly on the platform, including fair ratings and constructive feedback.
+
+9. **Third-Party Service Stability**
+    - **Assumption:** Third-party services and APIs integrated into the platform will remain stable and consistent in their offerings and performance.
+
 
 ### E.5 Effects
 
-Elements and properties of the environment that the system will affect.
+1. **Internet Connectivity Fluctuations**
+   - **Effect:** Variations in internet speed or connectivity issues can affect the app’s responsiveness and accessibility, potentially leading to a poor user experience or transaction failures.
+
+2. **Device Compatibility Changes**
+   - **Effect:** Updates or changes in components, user devices and their operating systems can impact the app's compatibility, requiring frequent updates or adaptations.
+
+3. **Regulatory Changes**
+   - **Effect:** New laws or changes in regulations (like privacy laws or labor regulations) can necessitate adjustments in how the platform operates, particularly in data handling and service provider management.
+
+4. **Changing Browser Window Size**
+   - **Effect:** When users resize their browser windows, it can affect the display and layout of the web app. This necessitates a responsive design that adapts seamlessly to different screen sizes and orientations, ensuring a consistent and user-friendly experience regardless of the device used.
 
 ### E.6 Invariants
 
-Properties of the environment that the system’s operation must preserve.
+1. **Payment Gateway Integration** 
+   - **Invariant:** The integration with payment gateways remains stable, ensuring consistent and reliable processing of transactions.
+
+2. **API Integration Stability**
+   - **Invariant:** The integration with external APIs, such as mapping services or external databases, remains stable, ensuring seamless interaction and data exchange.
 
 
 ---
