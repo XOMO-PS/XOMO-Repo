@@ -607,7 +607,89 @@ List of tasks to be carried out and their scheduling.
 
 ### P.4 Tasks and deliverables
 
-Details of individual tasks listed under P.3 and their expected outcomes.
+#### Design and Develop Masters/Service Provider Registration
+
+As a service provider, I want to able to register and login to the platform, so that I can join the team of service providers.
+##### Tasks
+* Design Registration Form.
+  * accepts full name,email-address, residence address, phone number, identification method, qualifications,
+  * previous experience.
+* Design a Backend service to store registered service providers.
+  * Store the customer data.
+* Design Backend service to store services provided.
+  * Store service provider qualification.
+* Design Qualifications assessment Form.
+  * accepts qualifications in terms of certifications, previous experience, preferred areas of interest for services.
+* Design frontend interface for customer to upload documents for identification.
+  * requires at-least one document among passport, other identification document.
+* Design a Backend service to verify user with provided identification method and document.
+  * connect with necessary 3rd party service to verify customer.
+
+#### Design and Develop Search engine
+
+As a user, I want to search for my issue / request type via search bar and see the available masters for that type so that, I can see the available Masters for that type by looking to their features.
+
+##### Tasks
+* Design of the search bar
+  * Accepts a string with maximum length 100
+* Design webpage to available services
+  * Provide list of available service.
+  * Provide short intro about the service.
+* Design webpage to show selected service by user.
+  * Selected service information should be listed.
+  * Available Masters should be listed next to each other in the format:
+  * Each one has a separate grid and grid needs to include minimal information such as rating and reviews
+* When a Master is selected, design webpage to show more information
+  * Show Public Profile of the Master.
+  * Show available dates for booking.
+  * On choosing a date, redirect to Booking webpage.
+* Design Backend service for Search engine
+  * While taking user input for services, provide suggestions by querying  backend to find suitable services.
+  * Display suitable types of requests / issues (it can be cleaning, electrician, etc.)
+  * If no results found, then show all available services.
+
+#### Design and Develop Profile Management
+
+As a user or customer, I want to modify my profile so that, I can change my personal information such as full name, location, occupation, age, biography, and image.
+
+##### Tasks
+* Design of the profile page
+  * Include text areas for name and biography of user and master.
+  * Optionally include other text areas for location, age, and occupation.
+  * User and Master can upload profile image.
+  * Need save button to save changes to profile.
+* Design backend API to send taken inputs from user to it
+  * Send information to backend API by clicking to save button
+* Modifying image and other profile information.
+  * Design backend API to update image
+  * When clicked on top of the image and the new image is selected from local, it needs to be sent to corresponding backend API.
+* Design Public Profile page for Masters
+  * A Master's public information should be displayed for user, which can include
+    * Name, Preferred Language of communication.
+    * The year since Master is providing services.
+    * Reviews and Ratings.
+    * Feedback from previously served users.
+
+#### Design and Develop Notification Service
+
+As a user or customer, I want to be notified about upcoming bookings.
+
+##### Tasks
+* Design notification webpage
+  * Show upcoming bookings with
+    * date, time
+    * Master assigned for the service.
+    * Option to cancel booking given:
+      * cancellation date+time is 24 hours before actual service time.
+      * cancellation reason.
+      * option to reschedule booking.
+* Trigger notification once booking is confirmed
+  * A push-notification(if enabled) and email to user with booking information.
+  * A push-notification(if enabled) and email to Master with booking information.
+* Design consent form for Notification.
+  * In profile management,  user and Master can enable/disable notifications.
+  * Option to choose which notification platform is preferred.
+  * Show Legal consent policy before enabling the notifications.
 
 ### P.5 Required technology elements
 
