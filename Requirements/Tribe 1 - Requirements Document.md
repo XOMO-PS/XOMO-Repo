@@ -485,7 +485,31 @@ The Project book describes all the constraints and expectations not about the sy
 
 ### P.1 Roles and personnel
 
-Main responsibilities in the project; required project staff and their needed qualifications.
+* Requirements Engineer(s)
+ 	* Faruk Avci
+	* Mostafa
+	* Adnan
+	* Gebrearegay
+	* Lamin
+* Product Owner
+	* Neha Fathima
+* Scrum Master(s)
+	* Betselot Aderaw
+	* Delilah Garsamo
+	* Faris Ahmed
+* Developer(s) - Frontend, Backend, Devops
+	* Faruk Avci
+	* Rishav Ranjan
+	* Gebrearegay
+	* Emmilly
+	* Faris Ahmed
+	* Lamin Banani
+	* Adnan
+	* Mostafa
+	* Betselot Aderaw
+	* Neha Fathima
+	* Shyngys
+	* Delilah Garsamo
 
 ### P.2 Imposed technical choices
 
