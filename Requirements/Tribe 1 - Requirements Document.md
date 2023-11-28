@@ -691,6 +691,77 @@ As a user or customer, I want to be notified about upcoming bookings.
   * Option to choose which notification platform is preferred.
   * Show Legal consent policy before enabling the notifications.
 
+#### Design and Develop service for Booking 
+
+As a user, I want to see a "Book Now" button next to the profile of a service provider so that I can easily initiate the booking process.
+
+##### Tasks
+* Design a booking webpage
+  * Display the rates for each available master.
+  * Show available dates for each master
+  * Dates derived must be in-sync with dates available for each Master.
+  * Allow user pick a date.
+* Design review booking dialog
+  * Add a "Confirm Booking" button for users to finalize their booking.
+* Trigger Notification to Master when a user makes a booking.
+  * Include relevant details in the notification, such as the user's name, booked service, and date with time(timezone if applicable).
+* Design Booking Cancellation dialog
+  * A registered, logged-in user should be able to cancel a booking, given:
+    * booking identifier.
+    * cancellation reason.
+    * cancellation date+time is 24 hours before actual service time.
+* Design Re-Schedule booking webpage
+  * Under booking management, a user or master should be able to reschedule booking given:
+    * reschedule date+time is 8 hours before actual service time.
+
+#### Design and Develop Payment Service
+
+As a user, I want to see a "Proceed to Payment" button after confirming my booking so that I can initiate the payment process
+
+##### Tasks
+* Design a payment page to show after confirm booking
+  * Display the total price for the booking.
+  * Allow the user to input card details, including card number, CVV, and cardholder's name.
+* Design review payment dialog/page
+  * Show a summary of the booking details, including the total price and card details.
+  * Add a "Confirm Payment" button for users to finalize the payment.
+* Implement a Backend Payment Processing
+  * Develop the functionality to proceed with money transfer form the user's account.
+  * Integrate a secure payment gateway for processing payments securely.
+  * Enable user Receipt Download
+* Design and implement the option for users to view and download a payment receipt for their records.
+  * Notify Users of Payment Issues
+* Trigger notification to users if there are any issues with the payment process
+  * provide detailed information on issue.
+  * provide alternate payment options.
+  * provide option to repeat payment.
+
+#### Design and Develop Feedback service
+
+As a user, I want to be able to provide a feedback, review and ratings for a service, so that I can share my experience.
+
+##### Tasks
+
+* Design a rating page to show after task is finished
+  * Allow users to rate the service using a star system (5 highest, 1 lowest).
+  * Provide a text box for users to add comments on the personnel.
+* Implement a restriction to allow users to rate only after payment and task completion.
+  * Provide dialog for additional optional Feedback to be added.
+* Design review section
+  * Display stars for each review .
+  * Show comments for each review to provide detailed feedback.
+* Implement Rating Mechanism
+  * Develop the backend functionality to store and calculate ratings for each master.
+  * Implement logic to restrict rating eligibility based on payment and task completion.
+* Implement Review Mechanism
+  * Develop the backend functionality to store and display user reviews for master.
+  * Display Review History for Users
+* Design and implement a section for to view users own review history.
+* Design and implement a section to view master review history.
+* Enable Flagging or Reporting of Review
+  * Implement a system for users to flag or report inappropriate reviews.
+  * Develop a mechanism for platform administrators to review and take appropriate action
+
 ### P.5 Required technology elements
 
 External systems, hardware, and software expected to be necessary for building the system.
