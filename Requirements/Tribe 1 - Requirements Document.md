@@ -198,12 +198,12 @@ The Environment book describes the application domain and external context, phys
 ---
 **Home Security Services** include the installation and monitoring of security systems like alarms, cameras, and motion sensors to protect a property from intrusion or damage.
 
-#### Job/Work Order
+#### Job/Work Orders
 
 ---
 A **Job/Work Order** is a formal request, usually in a documented form, used to authorize and specify the details of maintenance, repair, or other work to be completed. It typically includes information such as the type of job, location, description of tasks, and resources required.
 
-#### Worksheet
+#### Worksheets
 
 ---
 A **Worksheet** is a document or form used for recording information, planning, and organizing tasks related to a specific job or project. In the context of home services, it often includes details such as client information, service descriptions, time logs, materials used, and any notes relevant to the task at hand. Worksheets are essential for tracking progress, ensuring accountability, and facilitating communication among team members and with clients.
@@ -218,22 +218,22 @@ A **Worksheet** is a document or form used for recording information, planning, 
 ---
 **Facility Management** is the practice of coordinating the physical workplace with the people and work of an organization. It integrates principles of business administration, architecture, and the behavioral and engineering sciences to ensure functionality, comfort, safety, and efficiency of the built environment.
 
-#### Site Visit
+#### Site Visits
 
 ---
 A **Site Visit** involves a professional visiting a location to assess, review, or perform work required. This can be for preliminary assessment, ongoing project management, final inspection, or to provide specific services like repair or maintenance at the site.
 
-#### Task
+#### Tasks
 
 ---
 A **Task** is an individual unit of work or activity that is a component of a larger project. Tasks are specific, measurable actions with a defined scope and duration. They are the building blocks that, when completed, contribute to the accomplishment of a project's objectives.
 
-#### Project
+#### Projects
 
 ---
 A **Project** is a larger, overarching endeavor that consists of multiple tasks and activities. It is defined by a set of objectives, a start and end date, and often involves various resources, planning, and coordination. A project is completed when its goals and objectives are achieved, which typically involves the completion of numerous interrelated tasks.
 
-#### Quotation
+#### Quotations
 
 ---
 A **Quotation** is a formal statement or document that outlines the estimated cost for products or services. In the context of home services, it usually includes a detailed breakdown of the work to be done, the materials required, labor costs, and any other expenses. Quotations are provided to potential customers before any work begins, allowing them to understand and agree to the pricing and scope of the job.
@@ -305,7 +305,7 @@ A **Quotation** is a formal statement or document that outlines the estimated co
 
 9. **Third-Party Dependencies**
     - **Description:** Reliance on third-party services (like cloud hosting, APIs, etc.) can impose constraints based on their availability, performance, and feature set.
-    - This will need to be elaborated on based on P.5 - Required Technology Elements.
+    - The Required Technology Elements are found under "Required Technology Elements" in the [Project Requirements](#project) section of this document.
 
 ### E.4 Assumptions
 
