@@ -505,7 +505,8 @@ External systems, hardware, and software expected to be necessary for building t
 
 ### P.6 Risks and mitigation analysis
 
-Potential obstacles to meeting the schedule of P.4 and measures for adapting the plan if they do arise.
+#### Risk and Mitigation Table
+![Risk Table](https://github.com/XOMO-PS/XOMO-Repo/blob/main/Images/Risk%20Table%20Image.png)  
 
 ### P.7 Requirements process and report
 
