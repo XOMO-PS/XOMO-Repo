@@ -600,6 +600,13 @@ The Project book describes all the constraints and expectations not about the sy
 ### P.2 Imposed technical choices
 
 Any a priori choices binding the project to specific tools, hardware, languages, or other technical parameters.
+- Web framework
+  - Web Accessibility Evaluation tools to ensure adherence to Web Content Accessibility Guidelines
+- Hosting and scalability
+  - Azure Cloud Platform
+- DevOps
+   - Terraform as IaC
+
 
 ### P.3 Schedule and milestones
 
@@ -626,7 +633,7 @@ As a developer, I want to be able to deploy services and host the application, s
 - Setup domain for platform
   - create descriptive domain name for the service exposed to internet.
 
-#### P.4.2 Handling Emergency Eequests by Requesting Callback.
+#### P.4.2 Handling Emergency Requests by Requesting Callback.
 
 As a user, I want to be able to request a callback, so that I can get help from available master.
 
