@@ -1,0 +1,218 @@
+# XOMO/PS
+
+
+**Version:** 2023-11-25
+
+## Changelog
+
+- **2023-11-25:** First draft. Goals requirements added – by Tribe 1-group 4
+
+---
+
+⚠️ *This document follows the requirements book structure presented in the Handbook of requirements and business analysis.*
+
+## Contents
+
+- Goals
+    - G.1 Context and overall objectives
+    - G.2 Current situation
+    - G.3 Expected benefits
+    - G.4 Functionality overview
+    - G.5 High-level usage scenarios
+    - G.6 Limitations and exclusions
+    - G.7 Stakeholders and requirements sources
+- Environment
+    - E.1 Glossary
+    - E.2 Components
+    - E.3 Constraints
+    - E.4 Assumptions
+    - E.5 Effects
+    - E.6 Invariants
+- System
+    - S.1 Components
+    - S.2 Functionality
+    - S.3 Interfaces
+    - S.4 Detailed usage scenarios
+    - S.5 Prioritization
+    - S.6 Verification and acceptance criteria
+- Project
+    - P.1 Roles and personnel
+    - P.2 Imposed technical choices
+    - P.3 Schedule and milestones
+    - P.4 Tasks and deliverables
+    - P.5 Required technology elements
+    - P.6 Risks and mitigation analysis
+    - P.7 Requirements process and report
+
+---
+
+## Goals
+
+### G.1 Context and overall objectives
+
+It is observable that online services are becoming the most important element of daily activity in society. XOMO/PS is an online system connecting people in need with skilled professionals for quick and efficient home service repair and maintenance. The objective of this work is to analyze, design, and implement a web-based system that provides these services at both individual and organizational levels based on request location and service type. It aims to provide an easy and fast service for individuals based on their needs.
+
+#### Main objectives
+
+- G.1.2.   Connecting service requesting and service providers
+- G.1.3.   Providing  quality services
+- G.1.4.   Providing easy interface for users of the system
+- G.1.5.   Providing fast services for requester
+
+### G.2 Current situation
+
+#### What to address?
+
+- G.2.1     Service requesting and service providing  are in invisible barrier
+- G.2.2     Skillful professionals are missing due to shortage of connecting platforms
+- G.2.3     Very time consuming in getting available  services
+- G.2.4      Nearby service providers and service requesting people are not getting to know one another
+- G.2.5     Personalized searching of relevant service is not in use
+- Flexible booking mechanism of service request is not addressed
+
+### G.3 Expected benefits
+
+The main expected benefits of the project are listed below:
+
+- G.3.1     Saving time and resources
+- G.3.2     provide quality and reliable services
+- G.3.3     Minimizing efforts of all types
+- G.3.4     Wide range of services
+	XOMO offers a diverse range of home repair and maintenance services, catering to a variety of customer needs.
+- G.3.5     Safety and Security
+	Background checks and verification processes for service providers contribute to the safety and security of customers. The platform acts as a third party interested in protecting both users and professionals
+
+### G.4 Functionality overview
+
+Main functionality of the proposed system are listed below:
+
+- G.4.1     **System users adding functionality:** A user of the system should be able to register on the system.
+- G.4.2    **Viewing/accessing available services:** Users of the system or customers should be able to view available services.
+- G.4.3    **Searching/filtering masters of services:** Customers should be able to filter best masters of specific service.
+- G.4.4    **Ordering/booking services:** The system should provide service ordering functionality.
+- G.4.5    **Feedback giving functionality:** Users of the system should be able to send feedback messages.
+
+### G.5 High-level usage scenarios
+
+XOMO/PS will be hosted on a web server where every user can access using the internet. Operational users will be registered by responsible admins. A new user either as customer (service requesting/providing) registers on the system with his details as needed and be registered user. Then the user can view services and requests as per a role on the system orders services and writes feedback.
+
+### G.6 Limitations and exclusions
+
+The system will have the following limitations:
+
+- G.6.1     **Service providing hierarchies:** There will no service providers referring mechanism if one could not solve the problem.
+- G.6.2     **No distant service will be provided:** All services at the end are physically delivered except consultations.
+
+### G.7 Stakeholders and requirements sources
+
+The following stakeholders and requirement sources are identified for the system:
+
+- G.7.1     **Stakeholders:**
+    - Project team (cross-functional teams)
+    - Developers, analysts, managers, requirement engineers
+    - Operational teams (personnels of system such as customer support and administrators)
+    - Customers (service providers and service users)
+- G.7.2     **Requirement sources:**
+    - Operational teams, customers, repair and maintenance service centers, home service market centers, and literatures
+
+---
+## Environment
+
+The Environment book describes the application domain and external context, physical or virtual (or a mix), in which the system will operate.
+
+### E.1 Glossary
+
+Clear and precise definitions of all the vocabulary specific to the application domain, including technical terms, words from ordinary language used in a special meaning, and acronyms.
+
+### E.2 Components
+
+List of elements of the environment that may affect or be affected by the system and project. Includes other systems to which the system must be interfaced.
+
+### E.3 Constraints
+
+Obligations and limits imposed on the project and system by the environment.
+
+⚠️ This section should not be empty!
+
+### E.4 Assumptions
+
+Properties of the environment that may be assumed with the goal of facilitating the project and simplifying the system.
+
+### E.5 Effects
+
+Elements and properties of the environment that the system will affect.
+
+### E.6 Invariants
+
+Properties of the environment that the system’s operation must preserve.
+
+
+---
+## System
+
+The System book refines the Goal one by focusing on more detailed requirements about the system under development, mainly its constituents, behaviors, and properties.
+
+### S.1 Components
+
+Overall structure expressed by the list of major software and, if applicable, hardware parts.
+
+### S.2 Functionality
+
+One section (S.2.n) for each of the components identified in S.1 describing the corresponding behaviors (functional and non-functional properties).
+
+### S.3 Interfaces
+
+How the system makes the functionality of S.2 available to the rest of the world, particularly user interfaces and program interfaces (APIs).
+
+### S.4 Detailed usage scenarios
+
+Examples of interaction between the environment (or human users) and the system: use cases, user stories.
+
+### S.5 Prioritization
+
+Classification of the behaviors, interfaces, and scenarios (S.2, S.3, and S.4) by their degree of criticality.
+
+### S.6 Verification and acceptance criteria
+
+Specification of the conditions under which an implementation will be deemed satisfactory.
+
+---
+## Project
+
+The Project book describes all the constraints and expectations not about the system itself but about how to develop and produce it.
+
+### P.1 Roles and personnel
+
+Main responsibilities in the project; required project staff and their needed qualifications.
+
+### P.2 Imposed technical choices
+
+Any a priori choices binding the project to specific tools, hardware, languages, or other technical parameters.
+
+### P.3 Schedule and milestones
+
+List of tasks to be carried out and their scheduling.
+
+### P.4 Tasks and deliverables
+
+Details of individual tasks listed under P.3 and their expected outcomes.
+
+### P.5 Required technology elements
+
+External systems, hardware, and software expected to be necessary for building the system.
+
+### P.6 Risks and mitigation analysis
+
+Potential obstacles to meeting the schedule of P.4 and measures for adapting the plan if they do arise.
+
+### P.7 Requirements process and report
+
+Initially description of what the requirements process will be; later report on its steps.
+
+
+
+---
+
+Approved by:                                                        Signature
+
+Date:
