@@ -603,7 +603,8 @@ Any a priori choices binding the project to specific tools, hardware, languages,
 
 ### P.3 Schedule and milestones
 
-List of tasks to be carried out and their scheduling.
+#### Gantt Chart
+![Schedule Gantt Chart](https://github.com/XOMO-PS/XOMO-Repo/blob/main/Images/Gantt%20Chart%20Schedule.png)
 
 ### P.4 Tasks and deliverables
 
