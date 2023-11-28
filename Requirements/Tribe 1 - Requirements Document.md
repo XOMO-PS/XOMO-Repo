@@ -607,160 +607,220 @@ List of tasks to be carried out and their scheduling.
 
 ### P.4 Tasks and deliverables
 
-#### Design and Develop Masters/Service Provider Registration
+#### P.4.1 Setup Infrastructure
+
+As a developer, I want to be able to deploy services and host the application, so that we can create the product XOMO.
+
+##### Tasks
+
+- Create and setup account on Azure cloud platform
+  - using Terraform build IaC to create new business account on Microsoft Azure.
+  - every team member has access to account and resources on Azure.
+- Integrate support for compute, to create and deploy new services
+  - using Terraform build support for deploying new services to App Service on Azure.
+- Integrate API Gateway for the service
+  - service exposed to internet must pass through API gateway.
+- Integrate Key Vault for managing secrets of services
+  - when a service needs, it can store secrets in Key Vault.
+- Setup domain for platform
+  - create descriptive domain name for the service exposed to internet.
+
+#### P.4.2 Handling Emergency Eequests by Requesting Callback.
+
+As a user, I want to be able to request a callback, so that I can get help from available master.
+
+##### Tasks
+
+- Design form for emergency service requests.
+  - accepts
+    - user name, email, address, phone number, location.
+    - problem and impact to assess priority.
+  - give a message to user to confirm the requested service.
+- Design a backend service to process emergency requests
+  - an interface which can accept requests from form in #1.
+  - forward request to notification service.
+- Design a notification system to alert about emergency requests
+  - whenever an emergency service is requested.
+    - notify the customer support group.
+
+#### P.4.3 Design and Develop User Registration & Login
+
+As a user, I want to be able to register on the XOMO platform, so that I can book services.
+
+##### Tasks
+
+- Design user registration Form.
+  - accepts users full name, email, address, phone number, password.
+- Design a backend service to store registered users.
+  - store the user data in suitable data store.
+- Design user login
+  - accepts email and password.
+- Design a backend service to validate registered users on sign-in
+  - validate user data against the stored data.
+  - give a clear message, when validation fails.
+  - if not fail, navigate user to the main dashboard.
+
+#### P.4.4 Design and Develop Masters/Service Provider Registration
 
 As a service provider, I want to able to register and login to the platform, so that I can join the team of service providers.
-##### Tasks
-* Design Registration Form.
-  * accepts full name,email-address, residence address, phone number, identification method, qualifications,
-  * previous experience.
-* Design a Backend service to store registered service providers.
-  * Store the customer data.
-* Design Backend service to store services provided.
-  * Store service provider qualification.
-* Design Qualifications assessment Form.
-  * accepts qualifications in terms of certifications, previous experience, preferred areas of interest for services.
-* Design frontend interface for customer to upload documents for identification.
-  * requires at-least one document among passport, other identification document.
-* Design a Backend service to verify user with provided identification method and document.
-  * connect with necessary 3rd party service to verify customer.
 
-#### Design and Develop Search engine
+##### Tasks
+
+- Design Registration Form.
+  - accepts full name,email-address, residence address, phone number, identification method, qualifications,
+  - previous experience.
+- Design a Backend service to store registered service providers.
+  - Store the customer data.
+- Design Backend service to store services provided.
+  - Store service provider qualification.
+- Design Qualifications assessment Form.
+  - accepts qualifications in terms of certifications, previous experience, preferred areas of interest for services.
+- Design frontend interface for customer to upload documents for identification.
+  - requires at-least one document among passport, other identification document.
+- Design a Backend service to verify user with provided identification method and document.
+  - connect with necessary 3rd party service to verify customer.
+
+#### P.4.5 Design and Develop Search engine
 
 As a user, I want to search for my issue / request type via search bar and see the available masters for that type so that, I can see the available Masters for that type by looking to their features.
 
 ##### Tasks
-* Design of the search bar
-  * Accepts a string with maximum length 100
-* Design webpage to available services
-  * Provide list of available service.
-  * Provide short intro about the service.
-* Design webpage to show selected service by user.
-  * Selected service information should be listed.
-  * Available Masters should be listed next to each other in the format:
-  * Each one has a separate grid and grid needs to include minimal information such as rating and reviews
-* When a Master is selected, design webpage to show more information
-  * Show Public Profile of the Master.
-  * Show available dates for booking.
-  * On choosing a date, redirect to Booking webpage.
-* Design Backend service for Search engine
-  * While taking user input for services, provide suggestions by querying  backend to find suitable services.
-  * Display suitable types of requests / issues (it can be cleaning, electrician, etc.)
-  * If no results found, then show all available services.
 
-#### Design and Develop Profile Management
+- Design of the search bar
+  - Accepts a string with maximum length 100
+- Design webpage to available services
+  - Provide list of available service.
+  - Provide short intro about the service.
+- Design webpage to show selected service by user.
+  - Selected service information should be listed.
+  - Available Masters should be listed next to each other in the format:
+  - Each one has a separate grid and grid needs to include minimal information such as rating and reviews
+- When a Master is selected, design webpage to show more information
+  - Show Public Profile of the Master.
+  - Show available dates for booking.
+  - On choosing a date, redirect to Booking webpage.
+- Design Backend service for Search engine
+  - While taking user input for services, provide suggestions by querying backend to find suitable services.
+  - Display suitable types of requests / issues (it can be cleaning, electrician, etc.)
+  - If no results found, then show all available services.
+
+#### P.4.6 Design and Develop Profile Management
 
 As a user or customer, I want to modify my profile so that, I can change my personal information such as full name, location, occupation, age, biography, and image.
 
 ##### Tasks
-* Design of the profile page
-  * Include text areas for name and biography of user and master.
-  * Optionally include other text areas for location, age, and occupation.
-  * User and Master can upload profile image.
-  * Need save button to save changes to profile.
-* Design backend API to send taken inputs from user to it
-  * Send information to backend API by clicking to save button
-* Modifying image and other profile information.
-  * Design backend API to update image
-  * When clicked on top of the image and the new image is selected from local, it needs to be sent to corresponding backend API.
-* Design Public Profile page for Masters
-  * A Master's public information should be displayed for user, which can include
-    * Name, Preferred Language of communication.
-    * The year since Master is providing services.
-    * Reviews and Ratings.
-    * Feedback from previously served users.
 
-#### Design and Develop Notification Service
+- Design of the profile page
+  - Include text areas for name and biography of user and master.
+  - Optionally include other text areas for location, age, and occupation.
+  - User and Master can upload profile image.
+  - Need save button to save changes to profile.
+- Design backend API to send taken inputs from user to it
+  - Send information to backend API by clicking to save button
+- Modifying image and other profile information.
+  - Design backend API to update image
+  - When clicked on top of the image and the new image is selected from local, it needs to be sent to corresponding backend API.
+- Design Public Profile page for Masters
+  - A Master's public information should be displayed for user, which can include
+    - Name, Preferred Language of communication.
+    - The year since Master is providing services.
+    - Reviews and Ratings.
+    - Feedback from previously served users.
+
+#### P.4.7 Design and Develop Notification Service
 
 As a user or customer, I want to be notified about upcoming bookings.
 
 ##### Tasks
-* Design notification webpage
-  * Show upcoming bookings with
-    * date, time
-    * Master assigned for the service.
-    * Option to cancel booking given:
-      * cancellation date+time is 24 hours before actual service time.
-      * cancellation reason.
-      * option to reschedule booking.
-* Trigger notification once booking is confirmed
-  * A push-notification(if enabled) and email to user with booking information.
-  * A push-notification(if enabled) and email to Master with booking information.
-* Design consent form for Notification.
-  * In profile management,  user and Master can enable/disable notifications.
-  * Option to choose which notification platform is preferred.
-  * Show Legal consent policy before enabling the notifications.
 
-#### Design and Develop service for Booking 
+- Design notification webpage
+  - Show upcoming bookings with
+    - date, time
+    - Master assigned for the service.
+    - Option to cancel booking given:
+      - cancellation date+time is 24 hours before actual service time.
+      - cancellation reason.
+      - option to reschedule booking.
+- Trigger notification once booking is confirmed
+  - A push-notification(if enabled) and email to user with booking information.
+  - A push-notification(if enabled) and email to Master with booking information.
+- Design consent form for Notification.
+  - In profile management, user and Master can enable/disable notifications.
+  - Option to choose which notification platform is preferred.
+  - Show Legal consent policy before enabling the notifications.
+
+#### P.4.8 Design and Develop service for Booking
 
 As a user, I want to see a "Book Now" button next to the profile of a service provider so that I can easily initiate the booking process.
 
 ##### Tasks
-* Design a booking webpage
-  * Display the rates for each available master.
-  * Show available dates for each master
-  * Dates derived must be in-sync with dates available for each Master.
-  * Allow user pick a date.
-* Design review booking dialog
-  * Add a "Confirm Booking" button for users to finalize their booking.
-* Trigger Notification to Master when a user makes a booking.
-  * Include relevant details in the notification, such as the user's name, booked service, and date with time(timezone if applicable).
-* Design Booking Cancellation dialog
-  * A registered, logged-in user should be able to cancel a booking, given:
-    * booking identifier.
-    * cancellation reason.
-    * cancellation date+time is 24 hours before actual service time.
-* Design Re-Schedule booking webpage
-  * Under booking management, a user or master should be able to reschedule booking given:
-    * reschedule date+time is 8 hours before actual service time.
 
-#### Design and Develop Payment Service
+- Design a booking webpage
+  - Display the rates for each available master.
+  - Show available dates for each master
+  - Dates derived must be in-sync with dates available for each Master.
+  - Allow user pick a date.
+- Design review booking dialog
+  - Add a "Confirm Booking" button for users to finalize their booking.
+- Trigger Notification to Master when a user makes a booking.
+  - Include relevant details in the notification, such as the user's name, booked service, and date with time(timezone if applicable).
+- Design Booking Cancellation dialog
+  - A registered, logged-in user should be able to cancel a booking, given:
+    - booking identifier.
+    - cancellation reason.
+    - cancellation date+time is 24 hours before actual service time.
+- Design Re-Schedule booking webpage
+  - Under booking management, a user or master should be able to reschedule booking given:
+    - reschedule date+time is 8 hours before actual service time.
+
+#### P.4.9 Design and Develop Payment Service
 
 As a user, I want to see a "Proceed to Payment" button after confirming my booking so that I can initiate the payment process
 
 ##### Tasks
-* Design a payment page to show after confirm booking
-  * Display the total price for the booking.
-  * Allow the user to input card details, including card number, CVV, and cardholder's name.
-* Design review payment dialog/page
-  * Show a summary of the booking details, including the total price and card details.
-  * Add a "Confirm Payment" button for users to finalize the payment.
-* Implement a Backend Payment Processing
-  * Develop the functionality to proceed with money transfer form the user's account.
-  * Integrate a secure payment gateway for processing payments securely.
-  * Enable user Receipt Download
-* Design and implement the option for users to view and download a payment receipt for their records.
-  * Notify Users of Payment Issues
-* Trigger notification to users if there are any issues with the payment process
-  * provide detailed information on issue.
-  * provide alternate payment options.
-  * provide option to repeat payment.
 
-#### Design and Develop Feedback service
+- Design a payment page to show after confirm booking
+  - Display the total price for the booking.
+  - Allow the user to input card details, including card number, CVV, and cardholder's name.
+- Design review payment dialog/page
+  - Show a summary of the booking details, including the total price and card details.
+  - Add a "Confirm Payment" button for users to finalize the payment.
+- Implement a Backend Payment Processing
+  - Develop the functionality to proceed with money transfer form the user's account.
+  - Integrate a secure payment gateway for processing payments securely.
+  - Enable user Receipt Download
+- Design and implement the option for users to view and download a payment receipt for their records.
+  - Notify Users of Payment Issues
+- Trigger notification to users if there are any issues with the payment process
+  - provide detailed information on issue.
+  - provide alternate payment options.
+  - provide option to repeat payment.
+
+#### P.4.10 Design and Develop Feedback service
 
 As a user, I want to be able to provide a feedback, review and ratings for a service, so that I can share my experience.
 
 ##### Tasks
 
-* Design a rating page to show after task is finished
-  * Allow users to rate the service using a star system (5 highest, 1 lowest).
-  * Provide a text box for users to add comments on the personnel.
-* Implement a restriction to allow users to rate only after payment and task completion.
-  * Provide dialog for additional optional Feedback to be added.
-* Design review section
-  * Display stars for each review .
-  * Show comments for each review to provide detailed feedback.
-* Implement Rating Mechanism
-  * Develop the backend functionality to store and calculate ratings for each master.
-  * Implement logic to restrict rating eligibility based on payment and task completion.
-* Implement Review Mechanism
-  * Develop the backend functionality to store and display user reviews for master.
-  * Display Review History for Users
-* Design and implement a section for to view users own review history.
-* Design and implement a section to view master review history.
-* Enable Flagging or Reporting of Review
-  * Implement a system for users to flag or report inappropriate reviews.
-  * Develop a mechanism for platform administrators to review and take appropriate action
+- Design a rating page to show after task is finished
+  - Allow users to rate the service using a star system (5 highest, 1 lowest).
+  - Provide a text box for users to add comments on the personnel.
+- Implement a restriction to allow users to rate only after payment and task completion.
+  - Provide dialog for additional optional Feedback to be added.
+- Design review section
+  - Display stars for each review .
+  - Show comments for each review to provide detailed feedback.
+- Implement Rating Mechanism
+  - Develop the backend functionality to store and calculate ratings for each master.
+  - Implement logic to restrict rating eligibility based on payment and task completion.
+- Implement Review Mechanism
+  - Develop the backend functionality to store and display user reviews for master.
+  - Display Review History for Users
+- Design and implement a section for to view users own review history.
+- Design and implement a section to view master review history.
+- Enable Flagging or Reporting of Review
+  - Implement a system for users to flag or report inappropriate reviews.
+  - Develop a mechanism for platform administrators to review and take appropriate action
 
 ### P.5 Required technology elements
 
