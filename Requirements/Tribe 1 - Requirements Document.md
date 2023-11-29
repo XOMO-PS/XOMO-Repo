@@ -841,12 +841,12 @@ The Frontend component relies on modern frontend libraries to create a responsiv
 - **Bootstrap:** To ensure a consistent and mobile-friendly design.
 
 ##### P.5.1.2 Backend Framework
-The Backend component utilizes a robust backend framework to handle requests and interact with the database. The chosen framework is:
+The Backend component utilizes a robust backend framework to handle requests and interact with the database. The chosen frameworks are:
 
 - **Spring (Java) / Express (Node.js) / Django (Python) / Flask (Python):** Choosing one for building scalable and maintainable server-side applications.
 
 ##### P.5.1.3 Database Management System
-The Database component requires a reliable Database Management System to store and manage various data entities. The selected DBMS is:
+The Database component requires a reliable Database Management System to store and manage various data entities. The selected DBMS are:
 
 - **MySQL / PostgreSQL (Java or Node.js)** / **MongoDB (Node.js or Python):** Choosing one based on the backend technology.
 
@@ -862,7 +862,7 @@ To adhere to security best practices, the system will implement the following se
 The entire system will run on a cloud-based infrastructure. Key components include:
 
 - **Cloud Service Provider:** AWS (Amazon Web Services) / Acronis for its reliability and scalability.
-- **Virtual Machines:** To host frontend, backend, and database components.
+- **Virtual Machines:** To host frontend, backend, and database components separately.
 
 ##### P.5.2.2 Server Hardware
 The server hardware should meet the following specifications to ensure optimal performance:
@@ -877,7 +877,7 @@ The server hardware should meet the following specifications to ensure optimal p
 The main communication protocol for the system is HTTPS. This ensures secure data transfer between the client and the server.
 
 ##### P.5.3.2 Language and Localization (Internationalization (i18n) and Localization (l10n) Library)
-For comprehensive language support and content localization, the system will integrate an internationalization and localization library. One library into consideration is:
+For comprehensive language support and content localization, the system will integrate an internationalization and localization library. libraries into consideration are:
 
 - **React-Intl / Vue I18n / Angular i18n:** A JavaScript library for internationalization that provides components and an API for formatting dates, numbers, and strings, along with pluralization.
 
