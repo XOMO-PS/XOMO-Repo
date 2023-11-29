@@ -832,7 +832,81 @@ As a user, I want to be able to provide a feedback, review and ratings for a ser
 
 ### P.5 Required technology elements
 
-External systems, hardware, and software expected to be necessary for building the system.
+## P.5.1 Software Libraries
+
+### P.5.1.1 Frontend Libraries
+The Frontend component relies on modern frontend libraries to create a responsive and intuitive user interface. Key libraries include:
+
+- **React.js/Vue.js/Angular:** Choosing one for building the interactive user interface.
+- **Redux/Vuex/NgRx:** To manage the state of the frontend application.
+- **Bootstrap:** To ensure a consistent and mobile-friendly design.
+
+### P.5.1.2 Backend Framework
+The Backend component utilizes a robust backend framework to handle requests and interact with the database. The chosen framework is:
+
+- **Spring (Java) / Express (Node.js) / Django (Python) / Flask (Python):** Choosing one for building scalable and maintainable server-side applications.
+
+### P.5.1.3 Database Management System
+The Database component requires a reliable Database Management System to store and manage various data entities. The selected DBMS is:
+
+- **MySQL / PostgreSQL (Java or Node.js)** / **MongoDB (Node.js or Python):** Choosing one based on the backend technology.
+
+### P.5.1.4 Security Libraries
+To adhere to security best practices, the system will implement the following security libraries:
+
+- **Spring Security (Java) / Helmet.js (Node.js) / Django Security (Python) / Flask-Security (Python):** Choosing one for securing the application.
+- **bcrypt:** For secure password hashing and storage.
+
+## P.5.2 Hardware Devices
+
+### P.5.2.1 Hosting Infrastructure
+The entire system will run on a cloud-based infrastructure. Key components include:
+
+- **Cloud Service Provider:** AWS (Amazon Web Services) / Acronis for its reliability and scalability.
+- **Virtual Machines:** To host frontend, backend, and database components.
+
+### P.5.2.2 Server Hardware
+The server hardware should meet the following specifications to ensure optimal performance:
+
+- **CPU:** Multi-core processors for handling concurrent requests.
+- **RAM:** Adequate memory for efficient data processing.
+- **Storage:** SSD for fast read and write operations.
+
+## P.5.3 Communication Protocols
+
+### P.5.3.1 HTTPS
+The main communication protocol for the system is HTTPS. This ensures secure data transfer between the client and the server.
+
+### P.5.3.2 Language and Localization (Internationalization (i18n) and Localization (l10n) Library)
+For comprehensive language support and content localization, the system will integrate an internationalization and localization library. One library into consideration is:
+
+- **React-Intl / Vue I18n / Angular i18n:** A JavaScript library for internationalization that provides components and an API for formatting dates, numbers, and strings, along with pluralization.
+
+## P.5.4 External Services
+
+### P.5.4.1 Payment Gateway Integration
+The system will integrate with a reliable payment gateway service to handle transactions securely. Options under consideration include:
+
+- **Stripe:** Known for its global payment processing capabilities.
+
+### P.5.4.2 Geolocation Service
+For location-based functionalities, the system may utilize a geolocation service such as:
+
+- **Google Maps API:** To provide accurate location data for service providers and users.
+
+## P.5.5 Testing Frameworks
+
+### P.5.5.1 Frontend Testing
+To ensure the robustness of the frontend, the following testing frameworks will be employed:
+
+- **Jest (React) / Mocha (Vue, Angular) / Jasmine (Angular):** For unit testing.
+- **Cypress / Protractor (Angular):** For end-to-end testing.
+
+### P.5.5.2 Backend Testing
+For backend testing, the system will rely on:
+
+- **JUnit (Java) / Mocha (Node.js) / pytest (Python):** A versatile testing framework.
+- **Mockito (Java) / Chai (Node.js) / pytest-mock (Python):** For mocking and testing application components.
 
 ### P.6 Risks and mitigation analysis
 
