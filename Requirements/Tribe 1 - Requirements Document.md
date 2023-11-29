@@ -580,7 +580,6 @@ The Project book describes all the constraints and expectations not about the sy
 - Product Owner
   - Neha Fathima
 - Scrum Master(s)
-  - Betselot Aderaw
   - Delilah Garsamo
   - Faris Ahmed
 - Developer(s) - Frontend, Backend, Devops
