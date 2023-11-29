@@ -812,7 +812,7 @@ As a user, I want to be able to provide a feedback, review and ratings for a ser
 
 - Design a rating page to show after task is finished
   - Allow users to rate the service using a star system (5 highest, 1 lowest).
-  - Provide a text box for users to add comments on the personnel.
+  - Provide a text box for users to add comments on the master.
 - Implement a restriction to allow users to rate only after payment and task completion.
   - Provide dialog for additional optional Feedback to be added.
 - Design review section
