@@ -409,9 +409,9 @@ A **Quotation** is a formal statement or document that outlines the estimated co
 
 ---
 
-# System Requirements
+## System Requirements
 
-## Main use cases
+### Main use cases
 
 **UC1**: As a user, I want to access a list of available services, so as to see which services are offered.
 
@@ -421,7 +421,7 @@ A **Quotation** is a formal statement or document that outlines the estimated co
 
 **UC4**: As a master, I want to be able to add myself to the list of masters for specific services, so as to have more clients.
 
-## S1. Components
+### S1. Components
 
 As we see from the use cases above, we will have these main components:
 
@@ -440,7 +440,7 @@ Database to keep information about:
 
 Infrastructure where everything will run.
 
-## S.2 Functionality
+### S.2 Functionality
 
 #### S.2.1 **UC1** As a user, I want to access a list of available services, so as to see which services are offered:
 
@@ -472,13 +472,13 @@ Infrastructure where everything will run.
 - System should follow security & privacy best practices for users’ private information.
 - System’s UI should be intuitive, which works as the user expects and follows best UI/UX practices.
 
-## S.3 Interfaces
+### S.3 Interfaces
 
 The system’s User Interface should be available via all modern web browsers. The system should adapt to different display sizes, from small phones to big monitors. UI should be intuitive on both Desktop and Mobile interfaces.
 
 The system’s main communication protocol is HTTPS.
 
-## S.4 Detailed Usage Scenarios
+### S.4 Detailed Usage Scenarios
 
 #### S.4.1 As a user, I want to specify contact details when ordering a master, so a master can arrive at the place of my choice
 
@@ -524,7 +524,7 @@ The system’s main communication protocol is HTTPS.
   - Email
   - Phone numbers
 
-## S.5 Prioritization
+### S.5 Prioritization
 
 Priority will be measured in 0-4 scale, where:
 
@@ -544,7 +544,7 @@ Priority will be measured in 0-4 scale, where:
   - As a user, I want to order closest master, so as to fix an urgent issue ASAP.
 - 4 - Small functionality which may or may not improve usability of the service.
 
-## S6. Verification & Acceptance Criteria
+### S6. Verification & Acceptance Criteria
 
 All P0 and P1 tasks from the previous section should be completed, tested and reviewed by stakeholders.
 
@@ -554,7 +554,7 @@ The system should follow non-functional requirements stated in S2.
 
 The system should be accessible globally.
 
-## Optional use cases to consider
+### Optional use cases to consider
 
 #### As a user, I want to order closest master, so as to fix an urgent issue ASAP
 
@@ -599,17 +599,18 @@ The Project book describes all the constraints and expectations not about the sy
 ### P.2 Imposed technical choices
 
 Any a priori choices binding the project to specific tools, hardware, languages, or other technical parameters.
+
 - Web framework
   - Web Accessibility Evaluation tools to ensure adherence to Web Content Accessibility Guidelines
 - Hosting and scalability
   - Azure Cloud Platform
 - DevOps
-   - Terraform as IaC
-
+  - Terraform as IaC
 
 ### P.3 Schedule and milestones
 
 #### Gantt Chart
+
 ![Schedule Gantt Chart](https://github.com/XOMO-PS/XOMO-Repo/blob/main/Images/Gantt%20Chart%20Schedule.png)
 
 ### P.4 Tasks and deliverables
@@ -834,6 +835,7 @@ As a user, I want to be able to provide a feedback, review and ratings for a ser
 #### P.5.1 Software Libraries
 
 ##### P.5.1.1 Frontend Libraries
+
 The Frontend component relies on modern frontend libraries to create a responsive and intuitive user interface. Key libraries include:
 
 - **React.js/Vue.js/Angular:** Choosing one for building the interactive user interface.
@@ -841,16 +843,19 @@ The Frontend component relies on modern frontend libraries to create a responsiv
 - **Bootstrap:** To ensure a consistent and mobile-friendly design.
 
 ##### P.5.1.2 Backend Framework
+
 The Backend component utilizes a robust backend framework to handle requests and interact with the database. The chosen frameworks are:
 
 - **Spring (Java) / Express (Node.js) / Django (Python) / Flask (Python):** Choosing one for building scalable and maintainable server-side applications.
 
 ##### P.5.1.3 Database Management System
+
 The Database component requires a reliable Database Management System to store and manage various data entities. The selected DBMS are:
 
 - **MySQL / PostgreSQL (Java or Node.js)** / **MongoDB (Node.js or Python):** Choosing one based on the backend technology.
 
 ##### P.5.1.4 Security Libraries
+
 To adhere to security best practices, the system will implement the following security libraries:
 
 - **Spring Security (Java) / Helmet.js (Node.js) / Django Security (Python) / Flask-Security (Python):** Choosing one for securing the application.
@@ -859,12 +864,14 @@ To adhere to security best practices, the system will implement the following se
 #### P.5.2 Hardware Devices
 
 ##### P.5.2.1 Hosting Infrastructure
+
 The entire system will run on a cloud-based infrastructure. Key components include:
 
 - **Cloud Service Provider:** AWS (Amazon Web Services) / Acronis for its reliability and scalability.
 - **Virtual Machines:** To host frontend, backend, and database components separately.
 
 ##### P.5.2.2 Server Hardware
+
 The server hardware should meet the following specifications to ensure optimal performance:
 
 - **CPU:** Multi-core processors for handling concurrent requests.
@@ -874,9 +881,11 @@ The server hardware should meet the following specifications to ensure optimal p
 #### P.5.3 Communication Protocols
 
 ##### P.5.3.1 HTTPS
+
 The main communication protocol for the system is HTTPS. This ensures secure data transfer between the client and the server.
 
 ##### P.5.3.2 Language and Localization (Internationalization (i18n) and Localization (l10n) Library)
+
 For comprehensive language support and content localization, the system will integrate an internationalization and localization library. libraries into consideration are:
 
 - **React-Intl / Vue I18n / Angular i18n:** A JavaScript library for internationalization that provides components and an API for formatting dates, numbers, and strings, along with pluralization.
@@ -884,11 +893,13 @@ For comprehensive language support and content localization, the system will int
 #### P.5.4 External Services
 
 ##### P.5.4.1 Payment Gateway Integration
+
 The system will integrate with a reliable payment gateway service to handle transactions securely. Options under consideration include:
 
 - **Stripe:** Known for its global payment processing capabilities.
 
 ##### P.5.4.2 Geolocation Service
+
 For location-based functionalities, the system may utilize a geolocation service such as:
 
 - **Google Maps API:** To provide accurate location data for service providers and users.
@@ -896,12 +907,14 @@ For location-based functionalities, the system may utilize a geolocation service
 #### P.5.5 Testing Frameworks
 
 ##### P.5.5.1 Frontend Testing
+
 To ensure the robustness of the frontend, the following testing frameworks will be employed:
 
 - **Jest (React) / Mocha (Vue, Angular) / Jasmine (Angular):** For unit testing.
 - **Cypress / Protractor (Angular):** For end-to-end testing.
 
 ##### P.5.5.2 Backend Testing
+
 For backend testing, the system will rely on:
 
 - **JUnit (Java) / Mocha (Node.js) / pytest (Python):** A versatile testing framework.
