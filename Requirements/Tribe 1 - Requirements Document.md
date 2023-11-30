@@ -1,8 +1,8 @@
 # XOMO/PS
 
-![Constructor Logo](Pasted image 20231128135314.png)
+![Constructor Logo](https://github.com/XOMO-PS/XOMO-Repo/raw/main/Images/constructor_logo.png)
 
-**Version:** 2023-11-25
+**Version:** 2023-11-30
 
 ## Changelog
 
