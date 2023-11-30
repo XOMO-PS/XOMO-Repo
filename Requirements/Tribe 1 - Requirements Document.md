@@ -576,7 +576,7 @@ The Project book describes all the constraints and expectations not about the sy
   - Mostafa
   - Adnan
   - Gebrearegay
-  - Lamin
+  - Lamin Jawneh
 - Product Owner
   - Neha Fathima
 - Scrum Master(s)
@@ -588,7 +588,7 @@ The Project book describes all the constraints and expectations not about the sy
   - Gebrearegay
   - Emmilly
   - Faris Ahmed
-  - Lamin Banani
+  - Lamin Jawneh
   - Adnan
   - Mostafa
   - Betselot Aderaw
