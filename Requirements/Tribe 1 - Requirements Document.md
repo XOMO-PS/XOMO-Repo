@@ -6,7 +6,10 @@
 
 ## Changelog
 
+- **2023-11-24:** First draft. Environment requirements added – by Tribe 1-group 3
 - **2023-11-25:** First draft. Goals requirements added – by Tribe 1-group 4
+- **2023-11-26:** First draft. Project requirements added – by Tribe 1-group 1
+- **2023-11-28:** First draft. System requirements added – by Tribe 1-group 2
 
 ---
 
@@ -59,7 +62,7 @@ It is observable that online services are becoming the most important element of
 - G.1.3.   Providing  quality services
 - G.1.4.   Providing easy interface for users of the system
 - G.1.5.   Providing fast services for requester
-- G.1.6.   Increasing market demand of the service by making it scalable and flexible 
+- G.1.6. Increasing market demand of the service by making it scalable and flexible
 
 ### G.2 Current situation
 
@@ -96,7 +99,7 @@ Main functionality of the proposed system are listed below:
 
 ### G.5 High-level usage scenarios
 
-XOMO/PS will be hosted on a web server where every user can access using the internet. Operational users will be registered by responsible admins. A new user either as customer (service requesting/providing) registers on the system with his details as needed and be registered user so that he/she can log in to the system as needed. Then the user can view services and requests as per a role on the system orders services and writes feedback. 
+XOMO/PS will be hosted on a web server where every user can access using the internet. Operational users will be registered by responsible admins. A new user either as customer (service requesting/providing) registers on the system with his details as needed and be registered user so that he/she can log in to the system as needed. Then the user can view services and requests as per a role on the system orders services and writes feedback.
 
 ### G.6 Limitations and exclusions
 
@@ -104,7 +107,6 @@ The system will have the following limitations:
 
 - G.6.1 **Web platform only(will not include mobile version at first deployment):** A mobile version will not be included.
 - G.6.2 **No option of choosing users by masters:** The masters will not choose users from the system.
-- G.6.3 
 
 ### G.7 Stakeholders and requirements sources
 
@@ -115,7 +117,7 @@ The following stakeholders and requirement sources are identified for the system
   - Operational teams (personnels of system such as customer support and administrators)
   - Customers (service providers and service users)
 - G.7.2 **Requirement sources:**
-  - Operational teams(people who work on the edn product), customers and literatures
+  - Operational teams (people who work on the edn product), customers and literatures
 
 ---
 
@@ -573,7 +575,7 @@ The Project book describes all the constraints and expectations not about the sy
 ### P.1 Roles and personnel
 
 - Requirements Engineer(s)
-  - Faruk Avci
+  - Faruk Avcı
   - Mostafa Emad
   - Adnan Abu Ramadan
   - Gebrearegay
@@ -600,8 +602,6 @@ The Project book describes all the constraints and expectations not about the sy
   - Mikhail Savrasov
 
 ### P.2 Imposed technical choices
-
-Any a priori choices binding the project to specific tools, hardware, languages, or other technical parameters.
 
 - Web framework
   - Web Accessibility Evaluation tools to ensure adherence to Web Content Accessibility Guidelines
@@ -843,7 +843,7 @@ The Frontend component relies on modern frontend libraries to create a responsiv
 
 - **React.js/Vue.js/Angular:** Choosing one for building the interactive user interface.
 - **Redux/Vuex/NgRx:** To manage the state of the frontend application.
-- **Bootstrap:** To ensure a consistent and mobile-friendly design.
+- **Bootstrap/Tailwind:** To ensure a consistent and mobile-friendly design.
 
 ##### P.5.1.2 Backend Framework
 
@@ -900,6 +900,7 @@ For comprehensive language support and content localization, the system will int
 The system will integrate with a reliable payment gateway service to handle transactions securely. Options under consideration include:
 
 - **Stripe:** Known for its global payment processing capabilities.
+- **Local Bank Methods:** Since Stripe is not usable in many countries worldwide.
 
 ##### P.5.4.2 Geolocation Service
 
