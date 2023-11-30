@@ -589,7 +589,7 @@ The Project book describes all the constraints and expectations not about the sy
   - Faruk Avci
   - Rishav Ranjan
   - Gebrearegay
-  - Emmilly Immaculate
+  - Emmilly Immaculate Namuganga
   - Faris Ahmed
   - Lamin Jawneh
   - Adnan Abu Ramadan
