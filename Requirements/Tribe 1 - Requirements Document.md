@@ -614,7 +614,7 @@ The Project book describes all the constraints and expectations not about the sy
 
 #### Gantt Chart
 
-![Schedule Gantt Chart](https://github.com/XOMO-PS/XOMO-Repo/blob/main/Images/Gantt%20Chart%20Schedule.png)
+![Schedule Gantt Chart](https://github.com/XOMO-PS/XOMO-Repo/raw/main/Images/Gantt%20Chart%20Schedule.png)
 
 ### P.4 Tasks and deliverables
 
@@ -928,7 +928,7 @@ For backend testing, the system will rely on:
 
 #### Risk and Mitigation Table
 
-![Risk Table](https://github.com/XOMO-PS/XOMO-Repo/blob/main/Images/Risk%20Table%20Image.png)
+![Risk Table](https://github.com/XOMO-PS/XOMO-Repo/raw/main/Images/Risk%20Table%20Image.png)
 
 ### P.7 Requirements process and report
 
