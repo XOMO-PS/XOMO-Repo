@@ -573,8 +573,8 @@ The Project book describes all the constraints and expectations not about the sy
 
 - Requirements Engineer(s)
   - Faruk Avci
-  - Mostafa
-  - Adnan
+  - Mostafa Emad
+  - Adnan Abu Ramadan
   - Gebrearegay
   - Lamin Jawneh
 - Product Owner
@@ -586,15 +586,17 @@ The Project book describes all the constraints and expectations not about the sy
   - Faruk Avci
   - Rishav Ranjan
   - Gebrearegay
-  - Emmilly
+  - Emmilly Immaculate
   - Faris Ahmed
   - Lamin Jawneh
-  - Adnan
-  - Mostafa
+  - Adnan Abu Ramadan
+  - Mostafa Emad
   - Betselot Aderaw
   - Neha Fathima
-  - Shyngys
+  - Shyngys Zhiyenbek
   - Delilah Garsamo
+  - Utku Akıncı
+  - Mikhail Savrasov
 
 ### P.2 Imposed technical choices
 
