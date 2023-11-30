@@ -59,6 +59,7 @@ It is observable that online services are becoming the most important element of
 - G.1.3.   Providing  quality services
 - G.1.4.   Providing easy interface for users of the system
 - G.1.5.   Providing fast services for requester
+- G.1.6.   Increasing market demand of the service by making it scalable and flexible 
 
 ### G.2 Current situation
 
@@ -90,7 +91,7 @@ Main functionality of the proposed system are listed below:
 - G.4.1 **System users and their details adding functionality:** A user of the system should be able to register on the system.
 - G.4.2 **Viewing/accessing available services:** Users of the system or customers should be able to view available services.
 - G.4.3 **Searching/filtering masters of services:** Customers should be able to filter best masters of specific service.
-- G.4.4 **Ordering/booking services:** The system should provide service ordering functionality.
+- G.4.4 **Ordering/booking services and service payment:** The system should provide service ordering functionality.
 - G.4.5 **Feedback giving and rating functionality:** Users of the system should be able to send feedback messages.
 
 ### G.5 High-level usage scenarios
