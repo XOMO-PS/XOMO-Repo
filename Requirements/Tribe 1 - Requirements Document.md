@@ -87,34 +87,34 @@ The main expected benefits of the project are listed below:
 
 Main functionality of the proposed system are listed below:
 
-- G.4.1 **System users adding functionality:** A user of the system should be able to register on the system.
+- G.4.1 **System users and their details adding functionality:** A user of the system should be able to register on the system.
 - G.4.2 **Viewing/accessing available services:** Users of the system or customers should be able to view available services.
 - G.4.3 **Searching/filtering masters of services:** Customers should be able to filter best masters of specific service.
 - G.4.4 **Ordering/booking services:** The system should provide service ordering functionality.
-- G.4.5 **Feedback giving functionality:** Users of the system should be able to send feedback messages.
+- G.4.5 **Feedback giving and rating functionality:** Users of the system should be able to send feedback messages.
 
 ### G.5 High-level usage scenarios
 
-XOMO/PS will be hosted on a web server where every user can access using the internet. Operational users will be registered by responsible admins. A new user either as customer (service requesting/providing) registers on the system with his details as needed and be registered user. Then the user can view services and requests as per a role on the system orders services and writes feedback.
+XOMO/PS will be hosted on a web server where every user can access using the internet. Operational users will be registered by responsible admins. A new user either as customer (service requesting/providing) registers on the system with his details as needed and be registered user so that he/she can log in to the system as needed. Then the user can view services and requests as per a role on the system orders services and writes feedback. 
 
 ### G.6 Limitations and exclusions
 
 The system will have the following limitations:
 
-- G.6.1 **Service providing hierarchies:** There will no service providers referring mechanism if one could not solve the problem.
-- G.6.2 **No distant service will be provided:** All services at the end are physically delivered except consultations.
+- G.6.1 **Web platform only(will not include mobile version at first deployment):** A mobile version will not be included.
+- G.6.2 **No option of choosing users by masters:** The masters will not choose users from the system.
+- G.6.3 
 
 ### G.7 Stakeholders and requirements sources
 
 The following stakeholders and requirement sources are identified for the system:
 
 - G.7.1 **Stakeholders:**
-  - Project team (cross-functional teams)
-  - Developers, analysts, managers, requirement engineers
+  - Project team (Product owner,scum masters, developement team)
   - Operational teams (personnels of system such as customer support and administrators)
   - Customers (service providers and service users)
 - G.7.2 **Requirement sources:**
-  - Operational teams, customers, repair and maintenance service centers, home service market centers, and literatures
+  - Operational teams(people who work on the edn product), customers and literatures
 
 ---
 
